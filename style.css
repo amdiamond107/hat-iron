@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+.comments-container {
+  border: solid black 2px;
+  padding: 0.5em;
+}
+
+div.background-black-square {
+  background: rgb(200, 200, 177);
+  color: white;
+  margin-right: 0.50101010101101010101em;
+  padding: 0.33333em 0.6666em;
+}
+
+div.column.background-black-square span {
+  font-size: 1.9696969696969696em
+}
+
+.sub-title {
+  font-size: 0.33333333333333em;
+  padding-left: 22.2222222222%;
+}
+
+#big-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+ #name-search {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  #name-entry {
+    align-content: right;
+    width: 100% */
+  }
+  
+  #name-search::placeholder {
+    font-weight: boldER;
+    text-align: center;
+  }
+  
+  #find-btn {
+    display: none;
+  }
+
+#big-hat {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+#big-title {
+    font-size: 2.2em;
+    padding-left: %;
+  }
+  
+#main-title {
+  display: flex;
+  font-size: 3em;
+
+  padding: 0.5em 0 0.5em 0;
+}
+
+#exhibit-image {
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+}
+
+#tickets-bought {
+  font-size: 0.9em;
+}
+
+#name-entry {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+
+
+
+
+
+body{
+  padding: 0;
+  margin: 0;   
+  width:100vw;
+  height: 100vh;   
+}
+.panel{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.question-container{
+  margin: 10px;
+  padding: 5px;
+  width: 80vw;
+  height: 10vh;
+  background-color: #c7dddf;
+  font-size: x-large;
+  text-align: center;
+   
+}
+.result{
+  margin: 10px;
+  padding: 5px;
+  width:80vw;
+  height: 10vh;
+  text-align: center;
+  font-size: 50px;
+   
+}
+.option-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 5px;
+  width: 80vw;
+  height: 20vh;
+  background-color: #9eb1b3;  
+     
+}
+.option{   
+  padding: 10px;
+  width: 15vw;
+  height: 10vh;
+  font-size: larger;
+  background-color: lightskyblue;
+  border-radius: 25%;
+}
+.option:hover{
+  background-color: lightgoldenrodyellow;
+}
+.navigation{
+  width: 80vw;
+  height: 10vh;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  background-color:#c7dddf;
+}
+
+.evaluate,.next{
+  width:30vw;
+  height: 8vh;
+  padding: 5px;
+  font-size: larger;
+}
+.evaluate{
+ 
+  background-color: #50DBB4;
+}
+.next{
+  color: white;
+  background-color: #BF3325;

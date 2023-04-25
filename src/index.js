@@ -19,14 +19,32 @@ function setUsername(e) {
     // username ? hideDetails : enterUsername
 }
 
+
+const welcomeMessage = document.createElement('h3');
+const introMessage = document.createElement('h5');
+const nextButton = document.createElement('btn')
+
 function hideDetails() {
 
     nameForm.innerHTML = '';
-    const welcomeMessage = document.createElement('h3');
+    introMessage.setAttribute('id', 'intro-message')
+    nextButton.setAttribute('id', 'next-btn')
     welcomeMessage.setAttribute('id','welcome-message');
+    nextButton.textContent = 'i am ready to know my future'
     welcomeMessage.textContent = `welcome brother / sister ${username}`
+    introMessage.textContent = 'today you will be sorted into your respective bootcamps.  Before you lie four paths..and while each differs in nature [finish later] '
+
+    nextButton.addEventListener('click', questionOne)
+
+
+    formDiv.append(welcomeMessage, introMessage, nextButton)
     
-    formDiv.appendChild(welcomeMessage)
 }
 
+function questionOne () {
+        welcomeMessage.textContent = "question 1"
+        introMessage.textContent = 'whos ya daddy?'
+        nextButton.textContent = 'go ogogogogo'
+        formDiv.append(welcomeMessage, introMessage, nextButton)
+}
 

@@ -44,7 +44,26 @@ function hideDetails() {
 function questionOne () {
         welcomeMessage.textContent = "question 1"
         introMessage.textContent = 'whos ya daddy?'
-        nextButton.textContent = 'go ogogogogo'
+        nextButton.textContent = 'its u'
         formDiv.append(welcomeMessage, introMessage, nextButton)
+        nextButton.addEventListener('click', questionTwo)
 }
 
+function questionTwo () {
+    welcomeMessage.textContent = "question 2"
+    introMessage.textContent = 'do we see how to make question 3? claire? andrew? hello?'
+    nextButton.textContent = 'yes dan we see'
+    nextButton.addEventListener('click', questionThree)
+}
+
+function questionThree() {
+    welcomeMessage.textContent = 'great. in that case the future is ours, sky is limit, etc'
+    introMessage.textContent = ''
+    nextButton.textContent = "now it's my turn isn't it?"
+    nextButton.addEventListener('click', questionFour)
+}
+
+function questionFour() {
+    welcomeMessage.textContent = 'yes'
+    nextButton.textContent = '*nodding* yes'
+}

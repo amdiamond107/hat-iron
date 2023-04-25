@@ -2,82 +2,72 @@
   "questions": [
     {
       "id": 1,
-      "q": "which of these describes you the best?",
+      "q": "If you were in a theater production, which role would you prefer to be in",
       "answers": [
-        "puzzle solver",
-        "fashion kid",
-        "cop",
-        "aspiring software developer"
+        "star of the play",
+        "stage crew",
+        "costume designer",
+        "production technician"
       ]
       },
     {
       "id": 2,
-      "q": "which of these describes you the best?",
+      "q": "do you consider yourself to be entrepreneurial by nature",
       "answers": [
-        "puzzle solver",
-        "fashion kid",
-        "cop",
-        "aspiring software developer"
+        "yes",
+        "no"
 ]
 },
     {
       "id": 3,
-      "q": "which of these describes you the best?",
+      "q": "do you consider yourself to be a protector of others",
       "answers": [
-        "puzzle solver",
-        "fashion kid",
-        "cop",
-        "aspiring software developer"
+        "yes",
+        "no"
       ]
     },
     {
       "id": 4,
-      "q": "which of these describes you the best?",
+      "q": "do numbers tickle your fancy?",
       "answers": [
-        "puzzle solver",
-        "fashion kid",
-        "cop",
-        "aspiring software developer"
+        "yes",
+        "no"
       ]
     },
     {
       "id": 5,
-      "q": "which of these describes you the best?",
+      "q": "was art class your favorite subject in elementary school?",
       "answers": [
-        "puzzle solver",
-        "fashion kid",
-        "cop",
-        "aspiring software developer"
+        "yes",
+        "no"
       ]
     },
     {
       "id": 6,
-      "q": "which of these describes you the best?",
+      "q": "which of the following scenarios would give you the most joy/passion and overall fulfillment",
       "answers": [
-        "puzzle solver",
-        "fashion kid",
-        "cop",
-        "aspiring software developer"
+        "successfully solving a complicated problem",
+        "enhancing the user experience within a product",
+        "creating data models that arm your teammates with advantageous tools for success",
+        "creating and maintaining a strong and secure infrastructure"
       ]
     },
     {
       "id": 7,
-      "q": "which of these describes you the best?",
+      "q": "do you enjoy public speaking and/or presenting original ideas in front of an audience",
       "answers": [
-        "puzzle solver",
-        "fashion kid",
-        "cop",
-        "aspiring software developer"
+        "yes",
+        "no"
       ]
     },
     {
-      "id": 8,
-      "q": "which of these describes you the best?",
+      "id": 8,g
+      "q": "which of these roles in society speaks to your inner child the most",
       "answers": [
-        "puzzle solver",
-        "fashion kid",
+        "mathematician",
+        "fashionista",
         "cop",
-        "aspiring software developer"
+        "train conductor"
       ]
     },
     {
@@ -203,22 +193,3 @@
   ]
 }
 
-
-{
-  "ramens": [
-    {
-      "id": 2,
-      "name": "Naruto Ramen",
-      "restaurant": "Naruto",
-      "image": "./assets/ramen/naruto.jpg",
-      "rating": 10,
-      "comment": "My absolute fave!"
-    },
-    {
-      "id": 3,
-      "name": "Nirvana Shiromaru",
-      "restaurant": "Ippudo",
-      "image": "./assets/ramen/nirvana.jpg",
-      "rating": "7",
-      "comment": "Do buy the hype."
-    }, ]}

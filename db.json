@@ -1,14 +1,224 @@
 {
-    "questions": [
-      {
-        "id": 1,
-        "title": ,
-        "content": 
+  "questions": [
+    {
+      "id": 1,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
       },
-      {
-        "id": 2,
-        "title": "Second Article",
-        "content": 
-      }
-    ]
-  }
+    {
+      "id": 2,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+]
+},
+    {
+      "id": 3,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 4,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 5,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 6,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 7,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 8,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 9,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 10,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 11,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 12,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 13,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+   {
+      "id": 14,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 15,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 16,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+   {
+      "id": 17,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 18,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+    {
+      "id": 19,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    },
+   {
+      "id": 20,
+      "q": "which of these describes you the best?",
+      "answers": [
+        "puzzle solver",
+        "fashion kid",
+        "cop",
+        "aspiring software developer"
+      ]
+    }
+  ]
+}
+
+
+{
+  "ramens": [
+    {
+      "id": 2,
+      "name": "Naruto Ramen",
+      "restaurant": "Naruto",
+      "image": "./assets/ramen/naruto.jpg",
+      "rating": 10,
+      "comment": "My absolute fave!"
+    },
+    {
+      "id": 3,
+      "name": "Nirvana Shiromaru",
+      "restaurant": "Ippudo",
+      "image": "./assets/ramen/nirvana.jpg",
+      "rating": "7",
+      "comment": "Do buy the hype."
+    }, ]}

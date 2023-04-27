@@ -2,32 +2,38 @@ document.getElementById('name-search').style.height="40px";
 
 document.getElementById('name-search').style.fontSize="14pt";
 
-let developer = 0
-let cyberPd = 0
-let artist = 0
-let scientist = 0
+let developerCount = 0
+let cyberPdCount = 0
+let artistCount = 0
+let scientistCount = 0
 
-function developerCount(n){
-    developer = developer + n
-    console.log(developer)
+const picturesArray = [ '/img1.png',
+                        '/img2.png',
+                        '/img3.png',
+                        '/img4.png'
+                                 ]
+
+function developerAugment(n){
+    developerCount = developerCount + n
+    console.log(developerCount)
     
 }
 
-function cyberPdCount(n){
-    cyberPd += n
-    console.log(cyberPd)
+function cyberPdAugment(n){
+    cyberPdCount += n
+    console.log(cyberPdCount)
     
 }
 
-function artistCount(n){
-    artist += n
-    console.log(artist)
+function artistAugment(n){
+    artistCount += n
+    console.log(artistCount)
    
 }
 
-function scientistCount(n){
-    scientist += n
-    console.log(scientist)
+function scientistAugment(n){
+    scientistCount += n
+    console.log(scientistCount)
 
 }
 
@@ -105,22 +111,22 @@ function questionOne () {
         buttonD.textContent = globalQuestionObject[0].answers[3]
         buttonDiv.append(buttonB, buttonC, buttonD)
         buttonA.addEventListener('click', () => {
-            developerCount(1);
+            developerAugment(1);
             buttons[3].remove();
             buttons[2].remove();
             questionTwo()})
         buttonB.addEventListener('click', () => {
-            cyberPdCount(1)
+            cyberPdAugment(1)
             buttons[3].remove();
             buttons[2].remove();
             questionTwo()})
         buttonC.addEventListener('click', () => {
-            artistCount(1)
+            artistAugment(1)
             buttons[3].remove();
             buttons[2].remove();
             questionTwo()})
         buttonD.addEventListener('click',  () => {
-            scientistCount(1);
+            scientistAugment(1);
             buttons[3].remove();
             buttons[2].remove();
             questionTwo()})
@@ -136,12 +142,23 @@ function questionTwo () {
     welcomeMessage.textContent = 'question 2'
     introMessage.textContent = globalQuestionObject[1].q
     buttonA.textContent = globalQuestionObject[1].answers[0]
+
     buttonB.textContent = globalQuestionObject[1].answers[1]
+    buttonA.removeEventListener('click', () => {
+        developerAugment(1);
+        buttons[3].remove();
+        buttons[2].remove();
+        questionTwo()})
+     buttonB.removeEventListener('click', () => {
+            cyberPdAugment(1)
+            buttons[3].remove();
+            buttons[2].remove();
+            questionTwo()})
     buttonA.addEventListener('click', () => {
-        developerCount(1);
+        developerAugment(1);
         questionThree()})
     buttonB.addEventListener('click', () => {
-        developerCount(-1);
+        developerAugment(-1);
         questionThree()})
 }
 
@@ -152,13 +169,11 @@ function questionThree() {
     introMessage.textContent = globalQuestionObject[2].q
     buttonA.textContent = globalQuestionObject[2].answers[0]
     buttonB.textContent = globalQuestionObject[2].answers[1]
-    buttonA.addEventListener('click', questionFour)
-    buttonB.addEventListener('click', questionFour)
     buttonA.addEventListener('click', () => {
-        cyberPdCount(1);
+        cyberPdAugment(1);
         questionFour()})
     buttonB.addEventListener('click', () => {
-        cyberPdCount(-1);
+        cyberPdAugment(-1);
         questionFour()})
 }
 
@@ -170,10 +185,10 @@ function questionFour() {
     buttonA.textContent = globalQuestionObject[3].answers[0]
     buttonB.textContent = globalQuestionObject[3].answers[1]
     buttonA.addEventListener('click', () => {
-        scientistCount(1);
+        scientistAugment(1);
         questionFive()})
     buttonB.addEventListener('click', () => {
-        scientistCount(-1);
+        scientistAugment(-1);
         questionFive()})
 }
 
@@ -185,10 +200,10 @@ function questionFive() {
     buttonA.textContent = globalQuestionObject[4].answers[0]
     buttonB.textContent = globalQuestionObject[4].answers[1]
     buttonA.addEventListener('click', () => {
-        artistCount(1);
+        artistAugment(1);
         questionSix()})
     buttonB.addEventListener('click', () => {
-        artistCount(-1);
+        artistAugment(-1);
         questionSix()})
 }
 
@@ -202,16 +217,16 @@ function questionSix() {
     buttonC.textContent = globalQuestionObject[5].answers[2]
     buttonD.textContent = globalQuestionObject[5].answers[3]
     buttonA.addEventListener('click', () => {
-        developerCount(1);
+        developerAugment(1);
         questionSeven()})
     buttonB.addEventListener('click', () => {
-        artistCount(1);
+        artistAugment(1);
         questionSeven()})
     buttonC.addEventListener('click', () => {
-        scientistCount(1);
+        scientistAugment(1);
         questionSeven()})
     buttonD.addEventListener('click',  () => {
-        cyberPdCount(1);
+        cyberPdAugment(1);
         questionSeven()})
 }
 
@@ -223,13 +238,13 @@ function questionSeven() {
     buttonA.textContent = globalQuestionObject[6].answers[0]
     buttonB.textContent = globalQuestionObject[6].answers[1]
     buttonA.addEventListener('click', () => {
-        developerCount(0.5);
-        artistCount(0.5);
-        questionSeven()})
+        developerAugment(0.5);
+        artistAugment(0.5);
+        questionEight()})
     buttonB.addEventListener('click', () => {
-        scientistCount(0.5);
-        cyberPdCount(0.5);
-        questionSeven()})
+        scientistAugment(0.5);
+        cyberPdAugment(0.5);
+        questionEight()})
 
 // A = 0.5 points towards both developers & artists, B = 0.5 points towards both scientists & cyber pd
 
@@ -242,16 +257,35 @@ function questionEight() {
     buttonC.textContent = globalQuestionObject[7].answers[2]
     buttonD.textContent = globalQuestionObject[7].answers[3]
     buttonA.addEventListener('click', () => {
-        scientistCount(1);
-        questionSeven()})
+        scientistAugment(1);
+        resultsScreen()})
     buttonB.addEventListener('click', () => {
-        artistCount(1);
-        questionSeven()})
+        artistAugment(1);
+        resultsScreen()})
     buttonC.addEventListener('click', () => {
-        cyberPdCount(1);
-        questionSeven()})
+        cyberPdAugment(1);
+        resultsScreen()})
     buttonD.addEventListener('click',  () => {
         Count(1);
-        questionSeven()})
+        resultsScreen()})
 }
+}
+
+ 
+function resultsScreen() {
+    formDiv.innerHTML = 0
+    iterationRequirementCompleter(picturesArray)
+}
+
+
+
+function iterationRequirementCompleter (picturesArray) {
+    for (let i = 0; i < picturesArray.length; i++) {
+        const iteratedImage = document.createElement('img')
+        let imageDiv = document.getElementById('name-entry')
+        iteratedImage.src = picturesArray[i]
+        iteratedImage.setAttribute('id',`iterated-img-${i}`)
+        imageDiv.appendChild(iteratedImage)
+        
+    }
 }

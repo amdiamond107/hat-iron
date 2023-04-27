@@ -17,7 +17,7 @@
 }
 
 div.background-black-square {
-  background: rgb(200, 200, 177);
+  background: rgb(255, 245, 223);
   color: white;
   margin-right: 0.50101010101101010101em;
   padding: 0.33333em 0.6666em;
@@ -198,18 +198,9 @@ body:hover{
 
 }
 
-#intro-message{
-  font-size: 2em;
-  text-align: left;
-  background-color: rgb(255, 245, 223);
-  padding-top: 10px;
-  padding-bottom: 20px;
-  color: white;
-  margin-left: 33%;
-  
-}
 
-#intro-message:hover {
+
+#intro-message {
   font-size: 1.2em;
   text-align: center;
   padding: 20px;
@@ -236,6 +227,7 @@ body:hover{
   text-align: center;
   font-size: 1.2em;
   padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 #next-btn:hover {
@@ -245,6 +237,7 @@ body:hover{
   text-align: center;
   transform: translate(5px, 2px);
   cursor: none;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -255,17 +248,19 @@ body:hover{
   font-size: 1.2em;
   padding: 20px;
   float: right;
-  transition: transform 2.2s;
+  transition: transform 1.1s;
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 #b-btn:hover {
-  background-color: rgba(231, 231, 208, 0.9);
+  background-color: rgba(196, 199, 211, 0.81);
   color: rgba(255, 255, 249, 1);
   font-size: 3em;
   text-align: center;
   transform: translate(5px, 2px);
   cursor: none;
+  font-family: 'Roboto', sans-serif;
 
 }
 #c-btn {
@@ -273,18 +268,20 @@ body:hover{
   color: black;
   font-size: 1.2em;
   float: center;
-  transition: transform 3.3s;
+  transition: transform 1.2s;
   text-align: center;
-  padding: 20px
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 #c-btn:hover {
-  background-color: rgba(231, 231, 208, 0.9);
+  background-color: rgba(196, 199, 211, 0.81);
   color: rgba(255, 255, 249, 1);
   font-size: 3em;
   text-align: center;
   transform: translate(5px, 2px);
   cursor: none;
+  font-family: 'Roboto', sans-serif;
 
 }
 #d-btn {
@@ -292,13 +289,14 @@ body:hover{
   color: black;
   font-size: 1.2em;
   float: center;
-  transition: transform 4s;
+  transition: transform .7s;
   text-align: center;
   padding: 20px;
+
 }
 
 #d-btn:hover {
-  background-color: rgba(231, 231, 208, 0.9);
+  background-color: rgba(196, 199, 211, 0.81);
   color: rgba(255, 255, 249, 1);
   font-size: 3em;
   text-align: center;

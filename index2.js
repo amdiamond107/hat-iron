@@ -7,11 +7,13 @@ let cyberPdCount = 0
 let artistCount = 0
 let scientistCount = 0
 
-const picturesArray = [ '/img1.png',
-                        '/img2.png',
-                        '/img3.png',
-                        '/img4.png'
+const picturesArray = [ 'https://flatironschool.com/wp-content/uploads/2022/01/product-design.svg',
+                        'https://flatironschool.com/wp-content/uploads/2022/01/cyber-security.svg',
+                        'https://flatironschool.com/wp-content/uploads/2022/01/data-science.svg',
+                        'https://i.ibb.co/8P39t5s/Screenshot-2023-04-27-at-4-52-09-PM.png'
                                  ]
+
+    
 
 function developerAugment(n){
     developerCount = developerCount + n
@@ -82,6 +84,7 @@ buttonC.setAttribute('id', 'c-btn')
 const buttonD = document.createElement('btn')
 buttonD.setAttribute('id', 'd-btn')
 
+
 //removes name form, appends welcome screen
 function toWelcomeScreen() {
 
@@ -103,7 +106,7 @@ function toWelcomeScreen() {
 
 function questionOne () {
     const buttons = buttonDiv.getElementsByTagName('btn')
-        welcomeMessage.textContent = 'question 1'
+        welcomeMessage.textContent = `question ${globalQuestionObject[0].id}`
         introMessage.textContent = globalQuestionObject[0].q
         buttonA.textContent = globalQuestionObject[0].answers[0]
         buttonB.textContent = globalQuestionObject[0].answers[1]
@@ -139,7 +142,7 @@ function questionOne () {
 function questionTwo () {
     const buttons = buttonDiv.getElementsByTagName('btn')
     
-    welcomeMessage.textContent = 'question 2'
+    welcomeMessage.textContent = `question ${globalQuestionObject[1].id}`
     introMessage.textContent = globalQuestionObject[1].q
     buttonA.textContent = globalQuestionObject[1].answers[0]
 
@@ -165,7 +168,7 @@ function questionTwo () {
 // A = developers, B = not developers
 
 function questionThree() {
-    welcomeMessage.textContent = 'question 3'
+    welcomeMessage.textContent = `question ${globalQuestionObject[2].id}`
     introMessage.textContent = globalQuestionObject[2].q
     buttonA.textContent = globalQuestionObject[2].answers[0]
     buttonB.textContent = globalQuestionObject[2].answers[1]
@@ -273,19 +276,28 @@ function questionEight() {
 
  
 function resultsScreen() {
-    formDiv.innerHTML = 0
+    const mainPic = document.getElementById('big-image')
+    formDiv.innerHTML = '';
+    mainPic.innerHTML = '';
     iterationRequirementCompleter(picturesArray)
 }
 
 
 
 function iterationRequirementCompleter (picturesArray) {
-    for (let i = 0; i < picturesArray.length; i++) {
+    picturesArray.forEach((picture, i)=> {
         const iteratedImage = document.createElement('img')
         let imageDiv = document.getElementById('name-entry')
         iteratedImage.src = picturesArray[i]
         iteratedImage.setAttribute('id',`iterated-img-${i}`)
         imageDiv.appendChild(iteratedImage)
-        
+        iteratedImage.addEventListener('mouseover', () => {
+            iteratedImage.style.transform = 'scale(1.1)';
+          });
+        iteratedImage.addEventListener('mouseout', () => {
+            iteratedImage.style.transform = 'scale(1)';
+          });
+    })
     }
-}
+
+
